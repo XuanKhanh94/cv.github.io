@@ -1,0 +1,93 @@
+.container-footer {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+    border-top: 4px solid #ccc;
+    .container-footer-top {
+        margin-top: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        ul {
+            li {
+                list-style: none;
+                font-size: 14px;
+                margin-bottom: 15px;
+                a {
+                    color: #000;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .list-menu-footer {
+            font-weight: bold;
+            padding: 0;
+            a {
+                &:hover {
+                    text-decoration-thickness: 2px;
+                }
+            }
+        }
+        .contact-downloadapp {
+            display: flex;
+            margin-bottom: 10px;
+            .btn-VnExpress {
+                margin-right: 10px;
+            }
+        }
+
+        .contact {
+            margin-bottom: 10px;
+            p {
+                margin: 6px;
+            }
+            .contact-link {
+                display: flex;
+                flex-wrap: wrap;
+                a {
+                    color: #000;
+                    &:hover {
+                        color: #087cce;
+                    }
+                }
+                .contact-item {
+                    margin-left: 10px;
+                    margin-right: 20px;
+                }
+                .contact-item2 {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .hotline {
+            display: flex;
+            justify-content: space-around;
+            margin: -12px;
+            font-size: 14px;
+            p {
+                font-size: 12px;
+            }
+            .footer-top-left {
+                // padding-right: 20px;
+
+                padding-left: 10px;
+            }
+            .footer-top-right {
+                padding-left: 10px;
+            }
+        }
+    }
+    .container-footer-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 10px;
+        height: 54px;
+        padding: 10px 0;
+        line-height: 120%;
+        font-size: 14px;
+    }
+    .container-footer-bottom {
+    }
+}

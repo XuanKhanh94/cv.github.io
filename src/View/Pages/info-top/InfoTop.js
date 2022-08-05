@@ -24,14 +24,14 @@ function InfoTop(props) {
             <div className='container-top'>
                 <img src={logo} className='logo' />
                 <div>
-                    {moment().format('dddd')}{moment().format('dd/mm/yyyy')}
+                    {moment().format('dddd')} {moment().format('l')}
                 </div>
                 <div className='btn-top'>
                     <Button className='btn-news'>Mới nhất</Button>
                     <Button className='btn-international'>International</Button>
                 </div>
                 <Search
-                    placeholder="input search text"
+                    placeholder="Tìm kiếm"
                     onSearch={onSearch}
                     style={{
                         width: 200,
