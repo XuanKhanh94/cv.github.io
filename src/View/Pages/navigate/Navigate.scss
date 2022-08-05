@@ -1,14 +1,107 @@
 .container-navigate {
-    width: min(100% - 2rem);
+    width: 100%;
+    display: flex;
+    top: -45px;
+    justify-content: center;
     margin-inline: auto;
+    background: #fff;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
-    .ant-menu-horizontal {
-        border-bottom: unset;
+    transition: all 0.3s;
+    z-index: 1000;
+
+    .icon-home {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e5e5e5;
+        border-radius: 50%;
+        cursor: pointer;
     }
-    .ant-menu-submenu .ant-menu-sub {
-        li {
-            color: red;
+
+    .icon-home:hover {
+        background: #b52759;
+
+        svg {
+            color: #fff;
         }
     }
+
+    .icon-home-new {
+        width: 24px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+       
+        svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            color: #9f224e;
+        }
+    }
+
+    .link-home-new {
+        width: 0px;
+        white-space: nowrap;
+        transition: all 0.3s;
+        position: relative;
+        padding-right: 0px;
+        overflow: hidden;
+
+        a{
+            color: #9f224e;
+            font-weight: 600;
+        }
+    }
+
+    .show-link-home-new{
+        width: 105px;
+        opacity: 1;
+        padding-right: 15px;
+        padding-left: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .link-home-new::before {
+        content: "";
+        width: 1px;
+        height: 14px;
+        background: #e5e5e5;
+        position: absolute;
+        right: 0px;
+    }
+
+    .navigate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1370px;
+        padding: 0px 30px;
+
+        .ant-menu-overflow {
+            justify-content: center;
+        }
+
+        .ant-menu-horizontal {
+            border-bottom: unset;
+        }
+
+        .ant-menu-submenu .ant-menu-sub {
+            li {
+                color: red;
+            }
+        }
+    }
+
+}
+
+.container-navigate-fixed{
+    position: fixed;
+    top: 0px;
 }
