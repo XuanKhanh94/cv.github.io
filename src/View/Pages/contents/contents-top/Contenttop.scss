@@ -1,0 +1,45 @@
+.container-contenttop {
+    width: min(100% - 5rem, 1200px);
+    margin: auto;
+    .wrapper-topstory {
+        display: flex;
+        .thumb-art {
+            .img-contenttop {
+                width: 520;
+                height: 312px;
+            }
+        }
+        .items-topstory {
+            display: flex;
+            flex-direction: column;
+            margin-left: 24px;
+            .title-news {
+                a {
+                    color: #000;
+                    font-size: 20px;
+                    font-weight: 700;
+                    &:hover {
+                        color: #076db6;
+                    }
+                }
+            }
+            .description {
+                a {
+                    color: #000;
+                }
+            }
+            .meta-news {
+                display: flex;
+                p {
+                    margin-right: 10px;
+                    a {
+                        color: #000;
+                        &:hover {
+                            color: #076db6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

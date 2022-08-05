@@ -1,11 +1,16 @@
 import React from 'react';
-import './Contents.scss'
+import ContentSub from './contents-sub-news-top/ContentSub';
+import Contenttop from './contents-top/Contenttop';
+import './Contents.scss';
 
 function Contents(props) {
     return (
         <React.Fragment>
             <div className='container-content'>
-            </div>        </React.Fragment>
+                <Contenttop />
+                <ContentSub />
+            </div>
+        </React.Fragment>
     );
 }
 
