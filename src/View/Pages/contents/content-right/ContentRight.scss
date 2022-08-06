@@ -1,0 +1,32 @@
+.container-right {
+    .content-box-category {
+        display: flex;
+        .content-with-img {
+            width: 67%;
+            border-right: 1px solid #ccc;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+        .content-no-img {
+            width: calc(100% - 67%);
+            padding-left: 20px;
+        }
+    }
+    .search-info-school {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border-radius: 2px;
+        width: 93%;
+        background: #faf8f0;
+        padding: 6px 10px;
+        h3 {
+            margin-right: 10px;
+            margin-left: 15px;
+            a {
+                color: #b75c00;
+            }
+        }
+    }
+}

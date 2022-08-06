@@ -2,4 +2,19 @@
     min-height: 100vh;
     width: min(100% - 2rem, 1200px);
     margin-inline: auto;
+    .content-left-right {
+        display: flex;
+        width: 100%;
+        margin: 0 1rem;
+        padding: 20px;
+        .content-left {
+            width: 30%;
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+        }
+        .content-right {
+            width: calc(100% - 30% - 1rem);
+            padding-left: 20px;
+        }
+    }
 }

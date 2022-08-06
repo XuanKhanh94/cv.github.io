@@ -1,8 +1,11 @@
 .comment {
     display: flex;
+    // align-items: center;
+    // height: 20px;
+    // line-height: 20px;
     .message {
-        height: 5vh;
-        width: 2vw;
+        height: 20px;
+        width: 15px;
         background-color: #ccc;
         clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 58% 56%, 33% 76%, 40% 56%, 0 55%);
         margin-right: 5px;
@@ -11,5 +14,6 @@
     span {
         color: #076db6;
         cursor: pointer;
+        margin-top: -4px;
     }
 }

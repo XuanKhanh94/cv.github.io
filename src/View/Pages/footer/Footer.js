@@ -3,7 +3,7 @@ import React from 'react';
 import './Footer.scss';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
-import { FacebookOutlined, TwitterOutlined, YoutubeOutlined, MailOutlined, SafetyOutlined, UserSwitchOutlined } from '@ant-design/icons'
+import { FacebookOutlined, TwitterOutlined, YoutubeOutlined, MailOutlined, SafetyOutlined, UserSwitchOutlined, FacebookFilled } from '@ant-design/icons'
 
 function Footer(props) {
     return (
@@ -52,7 +52,7 @@ function Footer(props) {
                         </Col>
                         <Col span={4}>
                             <div>
-                                <ul style={{ paddingRight: ' 15px', borderRight: ' 1px solid #e5e5e5' }}>
+                                <ul style={{ marginRight: '40px', borderRight: ' 1px solid #e5e5e5' }}>
                                     <li><Link to="/">Khoa học</Link></li>
                                     <li><Link to="/">Số hóa</Link></li>
                                     <li><Link to="/">Xe</Link></li>
@@ -62,19 +62,21 @@ function Footer(props) {
                                 </ul>
                             </div>
                         </Col>
-                        <Col span={4}> <div>
-                            <ul style={{ paddingRight: ' 10px', borderRight: ' 1px solid #e5e5e5' }}>
-                                <li><Link to="/">Rao vặt</Link></li>
-                                <li><Link to="/">Startup</Link></li>
-                                <li><Link to="/">Mua ảnh VnExpress</Link></li>
-                                <li><Link to="/">Vhome</Link></li>
-                                <li><Link to="/">eBox</Link></li>
-                                <li><Link to="/">eWork</Link></li>
-
-                            </ul>
-                        </div></Col>
                         <Col span={4}>
-                            <div style={{ paddingLeft: '10px', color: ' #757575' }}>
+                            <div style={{ marginLeft: '-20px', borderRight: ' 1px solid #e5e5e5', marginRight: '40px', }}>
+                                <ul >
+                                    <li><Link to="/">Rao vặt</Link></li>
+                                    <li><Link to="/">Startup</Link></li>
+                                    <li><Link to="/">Mua ảnh VnExpress</Link></li>
+                                    <li><Link to="/">Vhome</Link></li>
+                                    <li><Link to="/">eBox</Link></li>
+                                    <li><Link to="/">eWork</Link></li>
+
+                                </ul>
+                            </div>
+                        </Col>
+                        <Col span={4}>
+                            <div style={{ color: ' #757575', marginLeft: '-30px', }}>
 
                                 <div>
                                     <p>Tải ứng dụng</p>
@@ -122,11 +124,11 @@ function Footer(props) {
 
                 <div className='container-footer-center'>
                     <div>
-                        <span style={{ marginRight: '10px' }}>Báo điện tử</span>  <img src={logo} />
+                        <span style={{ marginRight: '10px', fontSize: '16px' }}>Báo điện tử</span>  <img src={logo} />
                     </div>
 
                     <div>
-                        <span>Theo dõi VnExpress trên</span> <FacebookOutlined /> <TwitterOutlined /> <YoutubeOutlined />
+                        <span style={{ fontSize: '16px' }}>Theo dõi VnExpress trên</span> <FacebookFilled style={{ fontSize: '30px' }} />  <TwitterOutlined style={{ fontSize: '30px' }} />  <YoutubeOutlined style={{ fontSize: '30px' }} />
                     </div>
                 </div>
 

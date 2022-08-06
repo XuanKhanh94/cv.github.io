@@ -8,7 +8,7 @@
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     transition: all 0.3s;
-    z-index: 1000;
+    z-index: 99999;
 
     .icon-home {
         width: 24px;
@@ -35,7 +35,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-       
+
         svg {
             width: 24px;
             height: 24px;
@@ -52,13 +52,13 @@
         padding-right: 0px;
         overflow: hidden;
 
-        a{
+        a {
             color: #9f224e;
             font-weight: 600;
         }
     }
 
-    .show-link-home-new{
+    .show-link-home-new {
         width: 105px;
         opacity: 1;
         padding-right: 15px;
@@ -81,8 +81,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 1370px;
-        padding: 0px 30px;
+        min-width: 1200px;
+        padding: 0px 264px;
 
         .ant-menu-overflow {
             justify-content: center;
@@ -97,11 +97,13 @@
                 color: red;
             }
         }
+        .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+            padding: 0 10px;
+        }
     }
-
 }
 
-.container-navigate-fixed{
+.container-navigate-fixed {
     position: fixed;
     top: 0px;
 }
