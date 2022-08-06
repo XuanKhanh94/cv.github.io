@@ -48,6 +48,15 @@ function ContentRight(props) {
         subcate4: 'Vaccine',
         subcate5: 'Di chứng',
     }
+    const dataCategory5 = {
+        maincate: 'Giáo dục',
+        subcate1: 'Tin tức',
+        subcate2: 'Tuyển sinh',
+        subcate3: 'Chân dung',
+        subcate4: 'Du học',
+        subcate5: 'Giáo dục 4.0',
+    }
+
     const dataSub = {
         title1: 'Đại gia ngân hàng Thái tham vọng có 1,2 triệu khách Việt',
         title2: 'Coteccons có tổng giám đốc mới sau một năm rưỡi bị khuyết',
@@ -120,7 +129,7 @@ function ContentRight(props) {
             </>
             <>
 
-                <CategoryContent {...dataCategory4} />
+                <CategoryContent {...dataCategory5} />
                 <div className='content-box-category'>
                     <div className='content-with-img'>
 
